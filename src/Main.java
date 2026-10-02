@@ -26,5 +26,10 @@ public class Main {
             }
 
         } while (nilai != SELESAI);
+        // Memeriksa apakah nilai berada di luar rentang 0-100
+        if (nilai < 0 || nilai > 100) {
+            System.out.println("Ditolak - nilai harus 0-100");
+            continue;
+        }
     }
 }
