@@ -45,5 +45,15 @@ public class Main {
         } else {
             grade = 'E';
         }
+
+        // Memberikan keterangan berdasarkan grade
+        String keterangan = switch (grade) {
+            case 'A' -> "Sangat Baik";
+            case 'B' -> "Baik";
+            case 'C' -> "Cukup";
+            case 'D' -> "Kurang";
+            default -> "Tidak Lulus";
+        };
+        System.out.println(" Grade " + grade + " - " + keterangan);
     }
 }
