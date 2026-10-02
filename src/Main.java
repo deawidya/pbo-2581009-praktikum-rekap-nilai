@@ -55,5 +55,10 @@ public class Main {
             default -> "Tidak Lulus";
         };
         System.out.println(" Grade " + grade + " - " + keterangan);
+
+        // Menambahkan nilai ke total dan menghitung jumlah nilai yang valid
+        total += nilai;
+        jumlah++;
     }
+
 }
