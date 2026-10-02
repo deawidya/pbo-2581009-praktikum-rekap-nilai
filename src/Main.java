@@ -59,6 +59,23 @@ public class Main {
         // Menambahkan nilai ke total dan menghitung jumlah nilai yang valid
         total += nilai;
         jumlah++;
+
+        System.out.println();
+        System.out.println("Nilai sah : " + jumlah);
+
+        if (jumlah == 0) {
+            // Menampilkan pesan jika tidak ada nilai yang valid
+            System.out.println("Tidak ada nilai yang dimasukkan.");
+        } else {
+            // Menghitung nilai rata-rata
+            double rata = total / jumlah;
+
+            // Menentukan status kelulusan berdasarkan rata-rata
+            String status = rata >= 60 ? "LULUS" : "TIDAK LULUS";
+
+            System.out.println("Rata-rata : " + String.format("%.2f", rata));
+            System.out.println("Status: " + status);
+        }
     }
 
 }
